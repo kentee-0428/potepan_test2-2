@@ -1,0 +1,28 @@
+.calculator {
+  width: 200px;
+  height: 300px;
+}
+
+.calculator table {
+  background-color: black;
+  table-layout: fixed;
+}
+
+.main table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+button {
+  width: 100%;
+}
+
+.top td {
+  width: 100%;
+}
+
+input {
+  display: block;
+  width: 95%;
+  color: white;
+}

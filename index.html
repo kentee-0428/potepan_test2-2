@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <title>電卓</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  </head>
+  
+  <body>
+    <div class="calculator">
+      <table>
+        <tr class="top">
+          <td><input id="display" type="text" value="0" disabled></td>
+        </tr>
+        <tr class="main">
+          <td>
+            <table>
+              <tr>
+                <td><button class="cal-click" data-role="cal-number" value="7">7</button></td>
+                <td><button class="cal-click" data-role="cal-number" value="8">8</button></td>
+                <td><button class="cal-click" data-role="cal-number" value="9">9</button></td>
+                <td><button class="cal-click" data-role="cal-formula" value="/">÷</button></button></td>
+              </tr>
+              <tr>
+                <td><button class="cal-click" data-role="cal-number" value="4">4</button></td>
+                <td><button class="cal-click" data-role="cal-number" value="5">5</button></td>
+                <td><button class="cal-click" data-role="cal-number" value="6">6</button></td>
+                <td><button class="cal-click" data-role="cal-formula" value="*">×</button></td>
+              </tr>
+              <tr>
+                <td><button class="cal-click" data-role="cal-number" value="1">1</button></td>
+                <td><button class="cal-click" data-role="cal-number" value="2">2</button></td>
+                <td><button class="cal-click" data-role="cal-number" value="3">3</button></td>
+                <td><button class="cal-click" data-role="cal-formula" value="-">-</button></td>
+              </tr>
+              <tr>
+                <td><button class="cal-click" value="0">0</button></td>
+                <td><button class="clear-btn" data-role="cal-number" value="C">C</button></td>
+                <td><button class="cal-btn" value="=">=</button></td>
+                <td><button class="cal-click" data-role="cal-formula" value="+">+</button></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <script src="main.js"></script>
+  </body>
+  
+</html>
