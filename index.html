@@ -12,35 +12,38 @@
     <div class="calculator">
       <table>
         <tr class="top">
-          <td><input id="display" type="text" value="0" disabled></td>
+          <td><textarea id="disp" rows="1" readonly>0</textarea></td>
         </tr>
         <tr class="main">
           <td>
             <table>
               <tr>
-                <td><button class="cal-click" data-role="cal-number" value="7">7</button></td>
-                <td><button class="cal-click" data-role="cal-number" value="8">8</button></td>
-                <td><button class="cal-click" data-role="cal-number" value="9">9</button></td>
-                <td><button class="cal-click" data-role="cal-formula" value="/">÷</button></button></td>
+                <td><input type="button" value="7" class="key" onclick="nk(7)"></td>
+                <td><input type="button" value="8" class="key" onclick="nk(8)"></td>
+                <td><input type="button" value="9" class="key" onclick="nk(9)"></td>
+                <td><input type="button" value="+" class="key" onclick="op(1)"></td>
               </tr>
               <tr>
-                <td><button class="cal-click" data-role="cal-number" value="4">4</button></td>
-                <td><button class="cal-click" data-role="cal-number" value="5">5</button></td>
-                <td><button class="cal-click" data-role="cal-number" value="6">6</button></td>
-                <td><button class="cal-click" data-role="cal-formula" value="*">×</button></td>
+                <td><input type="button" value="4" class="key" onclick="nk(4)"></td>
+                <td><input type="button" value="5" class="key" onclick="nk(5)"></td>
+                <td><input type="button" value="6" class="key" onclick="nk(6)"></td>
+                <td><input type="button" value="-" class="key" onclick="op(2)"></td>
               </tr>
               <tr>
-                <td><button class="cal-click" data-role="cal-number" value="1">1</button></td>
-                <td><button class="cal-click" data-role="cal-number" value="2">2</button></td>
-                <td><button class="cal-click" data-role="cal-number" value="3">3</button></td>
-                <td><button class="cal-click" data-role="cal-formula" value="-">-</button></td>
+                <td><input type="button" value="1" class="key" onclick="nk(1)"></td>
+                <td><input type="button" value="2" class="key" onclick="nk(2)"></td>
+                <td><input type="button" value="3" class="key" onclick="nk(3)"></td>
+                <td><input type="button" value="×" class="key" onclick="op(3)"></td>
               </tr>
               <tr>
-                <td><button class="cal-click" value="0">0</button></td>
-                <td><button class="clear-btn" data-role="cal-number" value="C">C</button></td>
-                <td><button class="cal-btn" value="=">=</button></td>
-                <td><button class="cal-click" data-role="cal-formula" value="+">+</button></td>
+                <td><input type="button" value="0" class="key" onclick="nk(0)"></td>
+                <td><input type="button" value="." class="key" onclick="nk(10)"></td>
+                <td><input type="button" value="C" class="key" onclick="ac()"></td>
+                <td><input type="button" value="÷" class="key" onclick="op(4)"></td>
               </tr>
+              <tr>
+			          <td colspan="4"><input type="button" value="=" class="equal" onclick="op(9)"></td>
+		          </tr>
             </table>
           </td>
         </tr>
